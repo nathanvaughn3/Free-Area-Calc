@@ -1,0 +1,16 @@
+def freearea(c, d):
+    # c = .25
+    # d = .1875
+    if d > c:
+        area = "Diameter cannot be larger than spacing distance."
+    else:
+        area = d**2 * 90.69/c**2
+        # print(round(area, 0), "%")
+    return area
+
+
+freearea(.25, .1875)
+freearea(.1875, .1875)
+freearea(.1875, .125)
+freearea(1, 2)
+
